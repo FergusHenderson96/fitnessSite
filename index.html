@@ -19,14 +19,14 @@
   <section id="navbar">
     <header>
       <div class="container">
-        <div id="header-logo-mobile" class="hendos-gym-logo">
+        <div id="logo-mobile" class="hendos-gym-logo">
           <a href="#">Hendo's<br/>Gym</a>
         </div>
 
         <nav>
           <ul class="flex">
             <li><a href="#features">About</a></li>
-            <li><a href="#schedule-services">Services</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#trainers">PT's</a></li>
             <li id="header-logo" class="hendos-gym-logo">
               <a href="#">Hendo's<br/>Gym</a>
@@ -48,33 +48,33 @@
       </div>
     </header>
 
-    <div id="hero-slider">
-      <div class="hero-slide-item" style="background-image:url('https://www.besthealthmag.ca/wp-content/uploads/sites/16/2019/01/what_is_cardio-1024x768.jpg');">
-        <div class="hero-slider-marketing">
+    <div id="slider">
+      <div class="slide-item" style="background-image:url('https://www.besthealthmag.ca/wp-content/uploads/sites/16/2019/01/what_is_cardio-1024x768.jpg');">
+        <div class="slider-marketing">
           <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
           <h2>Cardio</h2>
           <button>More Info</button>
         </div>
       </div>
 
-      <div class="hero-slide-item" style="background-image:url('http://blog.goodlifefitness.com/media/1509/hub-bodypump.jpg');">
-        <div class="hero-slider-marketing">
+      <div class="slide-item" style="background-image:url('http://blog.goodlifefitness.com/media/1509/hub-bodypump.jpg');">
+        <div class="slider-marketing">
           <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
           <h2>Classes</h2>
           <button>More Info</button>
         </div>
       </div>
 
-      <div class="hero-slide-item" style="background-image:url('http://getwallpapers.com/wallpaper/full/3/1/b/200524.jpg');">
-        <div class="hero-slider-marketing">
+      <div class="slide-item" style="background-image:url('http://getwallpapers.com/wallpaper/full/3/1/b/200524.jpg');">
+        <div class="slider-marketing">
           <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
           <h2>Bodybuilding</h2>
           <button>More Info</button>
         </div>
       </div>
 
-      <div class="hero-slide-item" style="background-image:url('https://mocoshow.com/wp-content/uploads/2020/03/348674E1-BCA1-42D6-BE32-443F33935393-1024x684.jpeg');">
-        <div class="hero-slider-marketing">
+      <div class="slide-item" style="background-image:url('https://mocoshow.com/wp-content/uploads/2020/03/348674E1-BCA1-42D6-BE32-443F33935393-1024x684.jpeg');">
+        <div class="slider-marketing">
           <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
           <h2>Meal Prep</h2>
           <button>More Info</button>
@@ -240,6 +240,11 @@
           </tr>
         </table>
       </div>
+      
+      <div class="personal-trainer-box">
+        <p>If you think you have what it takes to join the team and become a personal trainer, click the link below.</p>
+        <button>Sign Up Now</button>
+      </div>
 
       <div class="membership-cards-box">
         <div class="inner-container">
@@ -247,13 +252,6 @@
           <h4>Membership Deals</h4>
           <h2>15% <span>Renewal Discount</span></h2>
         </div>
-      </div>
-
-      <div class="personal-trainer-box">
-        <strong>BECOME A</strong>
-        <h4>Personal Trainer</h4>
-        <p>If you think you have what it takes to join the team and become a personal trainer, click the link below.</p>
-        <button>Sign Up Now</button>
       </div>
     </div>
   </section>
@@ -287,8 +285,6 @@
         <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
       </ul>
 
-      <img src="https://onclickwebdesign.com/wp-content/uploads/footer-icon.png" class="bicep" alt="Bicep flex icon" />
-
       <small>
         Copyright &copy;2021 All rights reserved | This template is made by Fergus Henderson.
       </small>
@@ -312,99 +308,6 @@
     </div>
   </div>
 
-  <script>
-    // document ready function
-    $(function () {
-      // store jquery references to elements in const variables
-      const headerNav = $('header nav');
-      const hamburgerMenu = $('#hamburger-menu');
-      const search = $('#search');
-      const searchContainerHide = $('#search-container-hide');
-      const searchContainer = $('#search-container');
-      const youtubeButton = $('.youtube-button');
-      const videoFrame = $('#video-frame');
-      const videoFrameHide = $('#video-frame-hide');
-      const embedVideo = $('#embed-video');
-
-      // initialize hero slider
-      $('#hero-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        fade: true,
-        speed: 1000,
-        cssEase: 'linear'
-      });
-
-      $('#trainers-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
-        nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              arrows: false
-            }
-          },
-          {
-            breakpoint: 530,
-            settings: {
-              slidesToShow: 1,
-              arrows: false
-            }
-          }
-        ]
-      });
-
-      // initialize event handling
-      hamburgerMenu.on('click', () => {
-        headerNav.toggle();
-      });
-
-      search.on('click', () => {
-        searchContainer.css({
-          'opacity': '1',
-          'visibility': 'visible',
-          'z-index': '100'
-        });
-      });
-
-      searchContainerHide.on('click', () => {
-        searchContainer.css({
-          'opacity': '0',
-          'visibility': 'hidden',
-          'z-index': '0'
-        });
-      });
-
-      youtubeButton.on('click', () => {
-        videoFrame.css({
-          'opacity': '1',
-          'visibility': 'visible',
-          'z-index': '100'
-        });
-      });
-
-      videoFrameHide.on('click', () => {
-        videoFrame.css({
-          'opacity': '0',
-          'visibility': 'hidden',
-          'z-index': '0'
-        });
-        
-        embedVideo.prop('src', embedVideo.prop('src'));
-      });
-    });
-  </script>
+  <script src="func.js"></script>
 </body>
 </html>

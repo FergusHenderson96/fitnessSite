@@ -95,14 +95,13 @@ section, footer {
 .box {
   text-align: center;
 }
-/* end: global styles */
 
-/* Navbar Styling */
+                    /* Navbar Styling */
 #navbar {
   position: relative;
   padding: 0;
 }
-
+/* navbar background block styling */
 header {
   position: absolute;
   width: 100%;
@@ -113,25 +112,25 @@ header {
   padding: 16px 0;
   z-index: 1;
 }
-
+/* navbar content positioning */
 header nav {
   max-width: 950px;
   margin: 0 auto;
   position: relative;
 }
-
+/* navbar content positioning relative to logo */
 header nav ul.flex {
   align-items: center;
   justify-content: space-around;
 }
-
+/* navbar text */
 header nav ul li a {
   color: #fff;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 500;
 }
-
+/* navbar logo */
 .hendos-gym-logo {
   margin: 0 34px;
   border: 2px solid #fff;
@@ -139,22 +138,22 @@ header nav ul li a {
   text-align: center;
   letter-spacing: 2px;
 }
-
+/* navbar logo text */
 .hendos-gym-logo a {
   font-size: 28px;
   text-transform: uppercase;
   color: #fff;
   line-height: 20px;
 }
-
+/* navbar logo hover, stops underline*/
 .hendos-gym-logo a:hover {
   text-decoration: none;
 }
-
-#header-logo-mobile {
+/* mobile logo doesnt show */
+#logo-mobile {
   display: none;
 }
-
+/* search logo */
 #search {
   position: absolute;
   right: 0;
@@ -167,7 +166,7 @@ header nav ul li a {
   background: transparent;
   color: #fff;
 }
-
+/* mobile hamburger menu */
 #hamburger-menu {
   background-color: transparent;
   border: 1px solid #fff;
@@ -177,31 +176,31 @@ header nav ul li a {
   margin: 0 16px;
   display: none;
 }
-
+/* mobile hamburger menu lines */
 #hamburger-menu .strip {
   display: block;
   height: 1px;
   background-color: #fff;
   margin: 4px 0;
 }
-
-#hero-slider .hero-slide-item {
+                    /* top page sliding images */
+#slider .slide-item {
   position: relative;
   height: 895px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
-
-#hero-slider .hero-slide-item .youtube-button {
+/* top page youtube play button */
+#slider .slide-item .youtube-button {
   background: #233EDE;
   padding: 20px 23px;
   border-radius: 30px;
   color: #fff;
   font-size: 16px;
 }
-
-#hero-slider .hero-slider-marketing {
+/* slider images text and logo content */
+#slider .slider-marketing {
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -211,37 +210,36 @@ header nav ul li a {
   right: 0;
   margin: -100px auto 0;
 }
-
-#hero-slider .slick-dots {
+/* slider image dots */
+#slider .slick-dots {
   bottom: 35px;
 }
-
-#hero-slider .slick-dots li button:before {
+/* slider image dots */
+#slider .slick-dots li button:before {
   color: #fff;
   opacity: 1;
   padding: 2px 2px 2px 3px;
   border: 3px solid transparent;
   border-radius: 20px;
 }
-
-#hero-slider .slick-dots li.slick-active button:before {
+/* current slider image dot */
+#slider .slick-dots li.slick-active button:before {
   border-color: #fff;
 }
-/* end: hero section styles */
 
-/* start: features section styles */
+                    /*Features Styling*/
 #features .box {
   width: 31%;
 }
-
+/* features images*/
 #features .box > img {
   width: 100%;
 }
-
+/* features info below images */
 #features .box .feature-info-container {
   position: relative;
 }
-
+/* features icon below images */
 #features .box .icon {
   position: relative;
   margin: 0 auto;
@@ -253,88 +251,84 @@ header nav ul li a {
   line-height: 83px;
   text-align: center;
 }
-
+/* features icon and image alignment */
 #features .box .icon img {
   vertical-align: middle;
 }
-/* end: features section styles */
 
-/* start: services section styles */
+/*Services Styling*/
 #services {
   background: #212122;
 }
-
 #services .container {
   margin-bottom: 96px;
 }
-
 #services .box {
   width: 23.5%;
 }
-
+/* services icons */
 #services .box img {
   height: 65px;
   margin-bottom: 32px;
 }
-
+/* services heading */
 #services .box h4 {
   color: #fff;
 }
-/* end: services section styles */
 
-/* start: trainers section styles */
+                    /*Trainers styling*/
+/* background image */
 #trainers {
-  background: url('https://onclickwebdesign.com/wp-content/uploads/trainer-bg.jpg') top center no-repeat;
+  background: url('https://wallsdesk.com/wp-content/uploads/2016/10/Gym-Desktop-1.jpg') top center no-repeat;
   background-size: cover;
 }
-
+/* trainer slider area */
 #trainers-slider {
   width: 90%;
   margin: 0 auto;
 }
-
+/* area around slider area */
 #trainers-slider .slick-slide {
   padding: 0 20px;
 }
-
+/* trainer images */
 #trainers-slider .trainer-slider-item img {
   width: 100%;
 }
-
+/* trainer heading */
 #trainers-slider h4 {
   color: #fff;
   margin-top: 40px;
 }
-
+/* trainer text */
 #trainers-slider p {
   color: #fff;
   opacity: 0.6;
 }
-
+/* left arrow slider */
 #trainers-slider .slick-prev {
   left: -30px;
 }
-
+/* right arrow slider */
 #trainers-slider .slick-next {
   right: -10px;
 }
-
+/* arrow size */
 #trainers-slider .slick-prev:before,
 #trainers-slider .slick-next:before {
   font-size: 40px;
 }
-/* end: trainers section styles */
 
-/* start: schedule services styles */
+/*Services styling*/
 #schedule-services {
   text-align: left;
 }
-
+/* services boxes */
 #schedule-services .flex > div {
   width: 32%;
   box-sizing: border-box;
 }
-
+/* first titles */
 #schedule-services .flex strong {
   display: block;
   color: #212122;
@@ -342,114 +336,103 @@ header nav ul li a {
   opacity: 0.6;
   letter-spacing: 4px;
 }
-
 .upcoming-classes-box {
   border: 2px solid #E5E7F3;
   padding: 64px 40px 40px;
 }
-
+/* upcoming box title */
 .upcoming-classes-box h4 {
   margin-bottom: 32px;
 }
-
+/* upcoming box list */
 .upcoming-classes-box table {
   width: 100%;
 }
-
+/* upcoming box list */
 .upcoming-classes-box table tr td {
   padding: 13px 10px 13px 0;
   color: #7b7b7b;
   font-size: 14px;
 }
-
+/* upcoming box times */
 .upcoming-classes-box table tr td:last-child {
   text-align: right;
   padding-right: 0;
 }
-
+/* membership deal box */
 .membership-cards-box {
   background: #233EDE;
   padding: 24px;
 }
-
+/* membership deal box image background */
 .membership-cards-box .inner-container {
-  background: url('https://onclickwebdesign.com/wp-content/uploads/woman-exercise.jpg') top center no-repeat;
+  background: url('https://img.redbull.com/images/c_crop,x_0,y_81,h_1467,w_2200/c_fill,w_1380,h_920/q_auto,f_auto/redbullcom/2018/06/20/f6eddbb2-8b70-47bc-bdd6-9c1705ae8784/gym') top center no-repeat;
   height: 395px;
   padding: 40px 24px 24px;
 }
-
+/* membership deal box heading */
 .membership-cards-box h2 {
-  font-size: 72px;
+  font-size: 84px;
   font-weight: 700;
   color: #233EDE;
   line-height: 1;
 }
-
+/* membership deal box heading span */
 .membership-cards-box h2 span {
-  font-size: 16px;
+  font-size: 23px;
   letter-spacing: 0;
 }
-
+/* trainer box image */
 .personal-trainer-box {
-  background: url('https://onclickwebdesign.com/wp-content/uploads/personal-trainer.jpg') top center no-repeat;
+  background: url('https://lepfitness.co.uk/wp-content/uploads/2017/08/mock-certified-trainer-446x320.jpg') top center no-repeat;
   padding: 64px 48px 48px;
 }
-
-.personal-trainer-box h4 {
-  margin-bottom: 32px;
-  color: #fff;
-}
-
+/* trainer box text */
 .personal-trainer-box p {
-  color: #fff;
-  margin-bottom: 24px;
+  color: #212122;
+  margin-top: 280px;
 }
-
+/* trainer box sign up button */
 .personal-trainer-box button {
   width: 100%;
 }
 
-#schedule-services .personal-trainer-box strong {
-  color: #fff;
-}
-/* end: schedule services styles */
-
-/* start: footer section styles */
+/*Footer styling*/
 footer {
-  background: url('https://onclickwebdesign.com/wp-content/uploads/footer-bg.jpg') top center no-repeat;
+  background: url('https://wallpapercave.com/wp/wp2483005.jpg') top center no-repeat;
   background-size: cover;
   padding-bottom: 32px;
 }
-
+/* footer area */
 .footer-container {
   max-width: 625px;
   margin: 0 auto;
 }
-
+/* footer logo */
 #footer-logo {
   display: inline-block;
 }
-
+/* footer logo */
 footer nav {
   margin: 32px 0 96px;
 }
-
+/* footer list alignment */
 footer ul {
   display: flex;
   justify-content: space-around;
 }
-
+/* footer list text */
 footer ul li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 300;
 }
-
+/* footer email box/button alignment */
 footer .mailing-list {
   position: relative;
 }
-
+/* footer email box */
 footer input {
   color: #fff;
   height: 78px;
@@ -461,42 +444,36 @@ footer input {
   font-style: italic;
   padding-left: 32px;
 }
-
+/* footer sign up button */
 footer button {
   position: absolute;
   right: 2px;
   top: 2px;
   padding: 28px 56px;
 }
-
+/* footer social icons */
 footer ul.social-icons {
   max-width: 400px;
   margin: 64px auto 48px;
 }
-
+/* footer social icon font */
 footer ul.social-icons li a {
-  font-size: 16px;
+  font-size: 20px;
 }
-
-footer img.bicep {
-  display: block;
-  margin: 0 auto 32px;
-}
-
+/* footer copyright */
 footer small {
   color: #fff;
   opacity: 0.8;
   font-weight: 300;
   margin: 0 8px;
 }
-
+/* footer copyright text */
 footer small a {
   color: #fff;
   text-decoration: underline;
 }
-/* end: footer section styles */
 
-/* start: search and embed video overlay styles */
+/*Search and embed video overlay styling*/
 #search-container,
 #video-frame {
   background: #073B4C;
@@ -581,9 +558,8 @@ footer small a {
   padding-left: 24px;
   padding-right: 24px;
 }
-/* end: search and embed video overlay styles */
 
-/* start: media queries */
+/*Media queries*/
 @media (max-width: 992px) {
   h2 {
     font-size: 96px;
@@ -778,4 +754,3 @@ footer small a {
     }
   }
 }
-/* end: media queries */
