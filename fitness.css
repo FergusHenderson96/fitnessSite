@@ -50,7 +50,7 @@ ul {
 
 button {
   cursor: pointer;
-  background: #233EDE;
+  background: gray;
   color: #fff;
   font-size: 15px;
   text-align: center;
@@ -193,11 +193,8 @@ header nav ul li a {
 }
 /* top page youtube play button */
 #slider .slide-item .youtube-button {
-  background: #233EDE;
-  padding: 20px 23px;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 16px;
+  color: red;
+  font-size: 42px;
 }
 /* slider images text and logo content */
 #slider .slider-marketing {
